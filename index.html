@@ -1,90 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-* {
-  box-sizing: border-box;
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: white;
+		padding:20px;
+	}
+	.main {
+		max-width: 1500px;
+		margin auto;
+	}
+	.row,
+	.row > .column {
+		padding:8px;
+	}
+	.column{
+		float: left;
+		width: 25%;
+	}
+	.column:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+	.content {
+		background-color: white;
+		padding: 10px;
+	}
+	ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-
-.main {
-  max-width: 1500px;
-  margin: auto;
-}
-
-.row,
-.row > .column {
-  padding: 8px;
-}
-.column {
+li {
   float: left;
-  width: 25%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.content {
-  background-color: white;
-  padding: 10px;
-}
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
 }
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+.details {
+	color: tomato;
+	font-size: 20px;
+
+}
+a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+	@media screen and (max-width: 900px) {
+		.column{
+			width: 50%;
+		}
+	}
+	@media screen and (max-width: 600px) {
+		.column{
+			width: 100%;
+		}
+	}
+
+
+
+	
 </style>
+<head>
+	<title></title>
 </head>
 <body>
-
-
-<div class="main">
-
-
-<div class="row">
-  <div class="column">
-    <div class="content">
-      <img src="shutterstock_160918730.JPG" alt="Mountains" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="shutterstock_160918730.JPG" alt="Lights" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="shutterstock_160918730.JPG" alt="Nature" style="width:100%">
-    </div>
-  </div>
-  <div class="column">
-    <div class="content">
-    <img src="shutterstock_160918730.JPG" alt="Mountains" style="width:100%">
-    </div>
-  </div>
+	<div class="header">
+  <div class="content">
+		<img src="africatech.GIF" alt="image" style="width:100%">
 
 </div>
+</div>
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#contact">Contact Me</a></li>
+  <li><a href="#about">About Me</a></li>
+</ul>
 
-<div class="content">
-  <img src="shutterstock_160918730.JPG" alt="Bear" style="width:100%">
+	<div class="main">
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					<a href="">
+					<img src="shutterstock_160918730.JPG" alt="image" style="width:100%">
+					<em class="details"><b>School Management System</b><hr></em>
+					<p>With inclusion of css grids and media query,the site is able to allow students to navigate thruogh their school details like performance,fee deficitnd upcoming school events  </p>
+</a>
+				
+			</div>
+		</div>
+					<div class="column">
+				<div class="content">
+					<a href="">
+					<img src="shutterstock_160918730.JPG" alt="image" style="width:100%">
+					<em class="details"><b>E-Commerce Site</b><hr></em>
+					<p>Beneath the breath taking user interface lies bootstrap instructions combined with php and sql allowing customers to login any time into the system and make on-line orders</p>
+				</a>
+			</div>
+		</div>
+					<div class="column">
+				<div class="content">
+					<a href="">
+					<img src="shutterstock_160918730.JPG" alt="image" style="width:100%">
+					<em class="details"><b>Blog Site</b><hr></em>
+					<p>Great user interface,user experience design captivates and captivating titles attracts traffic to your blog site.It's detailed with python flusk socket io for live messaging with mongo db. </p>
+				</a>
+				
+			</div>
+		</div>
+					<div class="column">
+				<div class="content">
+					<a href="">
+					<img src="shutterstock_160918730.JPG" alt="image" style="width:100%">
+					<em class="details"><b>Movie Vendor Site</b><hr></em>
+					<p>Reach the highest number of movie clients via this site's flowless trailer videos for advertisement.Powered by python django,the site presents remarkable performance on both powerful and low spec gadgets. </p>
+				</a>
+				
+			</div>
+		</div>
+				
+
+
+
+	</div>
+
+	
 </div>
 
-
-</div>
 
 </body>
 </html>
