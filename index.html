@@ -1,91 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		* {
-			box-sizing: border-box;
-
-		}
-		body {
-			background-color: white;
-			padding: 20px;
-		}
-		.main{
-			max-width: 1300px;
-			margin: auto;
-		}
-		.row {
-           margin: 8px -16px;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
 }
 
-	.row,
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.row,
 .row > .column {
   padding: 8px;
 }
-
-}
 .column {
-	float:left;
-	width: 25%;
+  float: left;
+  width: 25%;
 }
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
+.content {
+  background-color: white;
+  padding: 10px;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 
-
-	</style>
-	<title>bradley</title>
+</style>
 </head>
 <body>
-	<div class="main">
-		<div class="row">
-			<div class="column">
-				<div class="content">
-					<img src="" alt="image" style="width:100%">
-					<h3></h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-				<div class="row">
-			<div class="column">
-				<div class="content">
-					<img src="" alt="image" style="width:100%">
-					<h3></h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-				<div class="row">
-			<div class="column">
-				<div class="content">
-					<img src="" alt="image" style="width:100%">
-					<h3></h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-				<div class="row">
-			<div class="column">
-				<div class="content">
-					<img src="" alt="image" style="width:100%">
-					<h3></h3>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<div class="content">
-			<img src="" alt="image" style="width:100%">
-			<h3></h3>
-					<p></p>
-			
-		</div>
 
 
+<div class="main">
 
-	</div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="shutterstock_160918730.JPG" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="shutterstock_160918730.JPG" alt="Lights" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="shutterstock_160918730.JPG" alt="Nature" style="width:100%">
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="shutterstock_160918730.JPG" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+
+</div>
+
+<div class="content">
+  <img src="shutterstock_160918730.JPG" alt="Bear" style="width:100%">
+</div>
+
+
+</div>
 
 </body>
 </html>
